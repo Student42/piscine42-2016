@@ -6,7 +6,7 @@
 /*   By: student42 <student42@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/05 11:21:42 by student42         #+#    #+#             */
-/*   Updated: 2016/09/05 11:55:47 by student42        ###   ########.fr       */
+/*   Updated: 2016/09/05 11:56:59 by student42        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,7 @@ char *ft_strstr(char *str, char *to_find)
 	len2 = ft_strlen(to_find);
 	for (int i = 0; *str && len >= len2; --len){
 		if (ft_strstrcmp(str, to_find, len2) == 0)
-		{
 			return ((char *)str);
-		}
 		str++;}
 	return (NULL);
 }
